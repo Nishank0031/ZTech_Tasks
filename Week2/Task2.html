@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1>Survey Form</h1>
+    <form action="/submit">
+       <label for="name">Name
+        <input type="text" id="name" placeholder="Enter your name">
+       </label>
+       <br>
+       <br>
+       <label for="Email"> Email
+        <input type="email" name="Email" placeholder="Mail_Id">
+        </label>
+       <br>
+       <br>
+       <label for="state">State
+        <input type="text" id="state" placeholder="Enter your state">
+       </label>
+       <br>
+       
+       <p><b>Gender : </b></p>
+       <label for="101">Male
+        <input type="radio" id="101" value="male" name="gender">
+       </label>
+        <label for="102">Female
+        <input type="radio" id="102" value="female" name="gender">
+        </label>
+        
+       <br>
+       <br>
+       <label for="date"> Date
+        <input type="date" id="date">
+       </label>
+       <br>
+       <br>
+         <label for="rating">How much do you like the course :
+              <input type="range" id="rating" name="rating" min="0" max="100" value="50">
+         </label>
+         <br>
+         <br>
+
+         <button style="color:black">Submit</button>
+
+
+
+
+    </form>
+</body>
+</html>
