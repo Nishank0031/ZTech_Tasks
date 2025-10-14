@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Popup with Overlay</title>
+    <style>
+        body{
+            text-align: center;
+            margin-top: 50px;
+        }
+        .openbtn{
+            background-color: lightcoral;
+            width: auto;
+            height: auto;
+            border: 2px solid black ;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .overlay{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0,0,0, 0.6);
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+        .modal{
+            width: 500px;
+            height: 200px;
+            background: lightblue;
+            border: 3px solid black;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        #closebtn{
+            position: relative;
+            top: 10px;
+            right: 15px;
+            margin-top: 10px;
+            margin-left: auto;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+        <button class="openbtn" id="openbtn">Open Modal Popup</button>
+        <div class="overlay" id="modalOverlay">
+            <div class="modal">
+                <button id="closebtn">Close</button>
+                <h2>Overlay Modal</h2>
+                <p>This is Modal popup with Overlay</p>
+            </div>
+        </div>
+</body>
+<script>
+       const openBtn = document.getElementById('openbtn');
+       const closeBtn = document.getElementById('closebtn');
+       const modal = document.getElementById('modalOverlay');
+
+       openbtn.onclick = function() {
+           modal.style.display='flex'
+       }
+       closebtn.onclick = function() {
+             modal.style.display = 'none';
+       }
+</script>
+</html>

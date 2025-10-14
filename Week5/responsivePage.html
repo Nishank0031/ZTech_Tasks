@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page Layout</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0%;
+            padding: 0%;
+        }
+        body{
+            font-family: 'Segoe UI', sans-serif;
+            line-height: 1.5;
+            color: #333;
+        }
+        header, section, footer{
+            padding: 3em 1em;
+            text-align: center;
+        }
+        .head{
+            background: #f5f5f5;
+            padding: 4em 1em;
+        }
+        .head h1{
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+        .head p{
+            font-size: 1.2rem;
+            margin-bottom: 1.5em;
+        }
+        .btn{
+            background: rgb(0, 112, 255);
+            color: white;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            transition:  background 0.1ms ease;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background: rgba(112,112, 255, 0.9);
+        }
+        .features{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2em;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .feature{
+            flex: 1 1 300px;
+            background: #f9f9f9;
+            padding: 2em;
+            border-radius: 8px;
+        }
+        .feature h3{
+            font-size: 1.5em;
+            margin-bottom: 0.5rem;
+        }
+        .testmonial{
+            max-width: 600px;
+            margin: 2em auto;
+            font-style: italic;
+            color: #555;
+        }
+        footer{
+            background: #222;
+            color: white;
+            padding: 2em 1em;
+            font-size: 0.9rem;
+        }
+        @media screen and (max-width:600px) 
+        {
+         .head h1{
+            font-size: 2rem;
+         }
+         .head p{
+            font-size: 1rem;
+         }   
+         .features{
+            gap:1rem;
+         }
+         .feature{
+            padding:2em,1em;
+         }
+
+        }
+    </style>
+  </head>
+  <body>
+   <header class="head">
+    <h1>Product Name</h1>
+    <p>Simplify your work flow with our all in one solution</p>
+    <button class="btn">Get Started</button>
+   </header>
+   <section class="features">
+    <div class="feature">
+        <h3>Fast Performance</h3>
+        <p>Optimized for speed and efficiency to keep your projects moving</p>
+    </div>
+    <div class="feature">
+        <h3>Rock-Solid Security</h3>
+        <p>Your data is encrypted and protected with the industry best practices</p>
+    </div>
+    <div class="feature">
+        <h3>User-Friendly</h3>
+        <p>Easy to use , no learning curve needed</p>
+    </div>
+   </section>
+   <section>
+    <h3>What Our Users Say </h3>
+    <p class="testimonial">"This product completely transformed our productivity. It's a must have.</p>
+   </section>
+   <footer>
+    <p>&copy;2025 Your Company Name. All rights reserved</p>
+   </footer>
+  </body>
+</html>
